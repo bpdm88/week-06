@@ -10,3 +10,6 @@ $string5 = "boogie";
 
 $joined = $string1 . " " . $string2 . " " . $string3 . " " . $string4 . " " . $string5;
 dump($joined); // "I like to boogie boogie"
+
+$joined2 = $joined = "$string1 $string2 $string3 $string4 $string5";
+dump($joined2);
