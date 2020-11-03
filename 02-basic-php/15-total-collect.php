@@ -3,13 +3,8 @@
 require __DIR__ . "/vendor/autoload.php";
 
 function total($items) {
-    $total = 0;
-
-    foreach ($items as $item) {
-        $total += $item["price"];
-  }
-  return $total;
-}
+    return collect($items)->pluck("price")->reduce(fn($total, $value) => $total + $value, 0);
+};
 
 $shoppingList = [[
     "name" => "coffee",
