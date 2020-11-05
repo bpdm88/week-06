@@ -7,7 +7,7 @@ class BasketItem
     private $type;
     private $price;
 
-    public function __construct($type, $price)
+    public function __construct(string $type, int $price)
     {
         $this->type = $type;
         $this->price = $price;

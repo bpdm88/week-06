@@ -8,7 +8,7 @@ class Book
     private $pages;
     private $pagesRead = 1;
 
-    public function __construct($title, $pages)
+    public function __construct(string $title, int $pages)
     {
         $this->title = $title;
         $this->pages = $pages;
