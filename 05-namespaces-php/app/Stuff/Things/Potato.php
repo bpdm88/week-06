@@ -6,12 +6,12 @@ class Potato
 {
     private $water = 0;
 
-    public function water()
+    public function water() : void
     {
         $this->water += 1;
     }
 
-    public function hasGrown()
+    public function hasGrown() : bool
     {
         return $this->water >= 5 === true;
 

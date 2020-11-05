@@ -13,17 +13,17 @@ class BasketItem
         $this->price = $price;
     }
 
-    public function type()
+    public function type() : string
     {
         return $this->type;
     }
 
-    public function price()
+    public function price() : float
     {
         return $this->price;
     }
 
-    public function priceFormatted()
+    public function priceFormatted() : string
     {
         return "£" . number_format($this->price, 2);
     }

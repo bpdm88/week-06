@@ -14,12 +14,12 @@ class Book
         $this->pages = $pages;
     }
 
-    public function read($pages)
+    public function read(int $pages) : void
     {
         $this->pagesRead += $pages;
     }
 
-    public function currentPage()
+    public function currentPage() : int
     {
         return $this->pagesRead;
     } 
