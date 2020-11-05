@@ -8,7 +8,7 @@ class Address
     private $postcode;
     private $town;
 
-    public function __construct($street, $postcode, $town) 
+    public function __construct(string $street, string $postcode, string $town) 
     {
         $this->street = $street;
         $this->postcode = $postcode;
