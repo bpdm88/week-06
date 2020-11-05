@@ -12,22 +12,26 @@ class Stringy
         $this->string = $string;
     }
 
-    public function lower() {
+    public function lower() : string 
+    {
        $string = $this->string;
        return strtolower($string);
     }
 
-    public function upper() {
+    public function upper() : string 
+    {
         $string = $this->string;
         return strtoupper($string);
      }
 
-     public function append($newWord) {
+     public function append(string $newWord) : string 
+     {
         $string = $this->string;
         return $string . $newWord;
      }
 
-     public function repeat($num) {
+     public function repeat(int $num) : string 
+     {
         $string = $this->string;
         return str_repeat($string, $num);
      }

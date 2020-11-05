@@ -15,19 +15,23 @@ class Address
         $this->town = $town;
     }
 
-    public function setStreet($newStreet) {
+    public function setStreet(string $newStreet) : void
+    {
         $this->street = $newStreet;
     }
 
-    public function setPostcode($newPostcode) {
+    public function setPostcode(string $newPostcode) : void 
+    {
         $this->postcode = $newPostcode;
     }
 
-    public function setTown($newTown) {
+    public function setTown(string $newTown) : void 
+    {
         $this->town = $newTown;
     }
     
-    public function fullAddress() {
+    public function fullAddress() : string 
+    {
         $fullAddress = [$this->street, $this->postcode, $this->town];
         $seperated = implode(",", $fullAddress);
         return $seperated;

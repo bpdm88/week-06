@@ -6,15 +6,18 @@ class LightSwitch
 {
     private $isOn = false;
 
-    public function isOn() {
+    public function isOn() : bool 
+    {
         return $this->isOn;
     }
 
-    public function turnOn() {
+    public function turnOn() : void
+    {
         $this->isOn = true;
     }
 
-    public function turnOff() {
+    public function turnOff() : void
+    {
         $this->isOn = false;
     }
     
