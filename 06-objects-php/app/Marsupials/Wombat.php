@@ -7,7 +7,7 @@ class Wombat
     private $name;
     private $hugs = 0;
 
-    public function __construct($name)
+    public function __construct(string $name)
     {
         $this->name = $name;
     }

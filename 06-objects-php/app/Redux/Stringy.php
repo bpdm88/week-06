@@ -6,7 +6,7 @@ class Stringy
 {
     private $string;
 
-    public function __construct($string) 
+    public function __construct(string $string) 
     {
         $this->string = $string;
     }
