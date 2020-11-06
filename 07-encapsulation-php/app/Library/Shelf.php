@@ -8,9 +8,13 @@ class Shelf
 
     public function addBook(Book $book) : Shelf
     {
-        $this->books = $this->book[];
-        return $this;
+        $this->books[] = $book;
 
+        $items = collect($this->books);
+
+        $items->map(function ($book) {
+            return $book->getTitle();
+        })
     }
 
     public function titles() : array

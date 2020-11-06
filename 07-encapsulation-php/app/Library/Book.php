@@ -23,4 +23,9 @@ class Book
     {
         return $this->pagesRead;
     } 
+
+    public function getTitle() : string 
+    {
+        return $this->title;
+    }
 }
